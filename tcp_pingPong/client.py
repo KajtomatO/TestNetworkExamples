@@ -4,7 +4,7 @@ import socket
 
 
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
-    s.connect((SERVER_IP, PORT))
+    s.connect((HOST, PORT))
     s.sendall(b"Hello, world")
     data = s.recv(1024)
 
